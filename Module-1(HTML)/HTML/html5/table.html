@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML Table</title>
+    <link rel="stylesheet" href="style.css">
     <style>
         fieldset{
             margin: 1.5rem auto;
@@ -16,12 +17,17 @@
             margin: 4rem auto;
             color: #333;
         }
+        tr:nth-child(even){
+            background-color: #dedede;
+            
+        }
         td,th{
             border: 1px solid #ccc;
             padding: 8px 12px;
             border-color: #fff;
             font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
             font-weight: 500;
+            
         }
         caption{
             font-size: 1.2rem;
@@ -30,7 +36,19 @@
         }
     </style>
 </head>
-<body style="background-color: #eee;">
+<body>
+    <header>
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="form.html">Form</a></li>
+            <li><a href="table.html">Table</a></li>
+            <li><a href="audio-video.html">Media</a></li>
+          </ul>
+        </nav>
+        <hr style="width: 50%;"><br>
+        <h2>table page</h2>
+    </header>
     <fieldset>
         <table>
             <caption>HTML Form</caption>
