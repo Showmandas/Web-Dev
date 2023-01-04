@@ -5,17 +5,26 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Form</title>
+    <style>
+        label{
+            display: block;
+            margin-bottom: 1rem;
+        }
+    </style>
 </head>
 <body>
     <div class="form-container">
         <form>
             <label for="name">
+                Your name:
                 <input type="text" id="name" placeholder="your name">
             </label>
             <label for="email">
+                Your email:
                 <input type="email" id="email" placeholder="your email">
             </label>
             <label for="phn">
+                Your Mobile Number:
                 <input type="number" id="phn" placeholder="your mobile number">
             </label>
             <fieldset>
@@ -51,7 +60,7 @@
             <fieldset>
                 <legend>Message:</legend>
                 <textarea name="msg" id="msg" cols="60" rows="5"></textarea>
-            </fieldset>
+            </fieldset><br>
             <input type="reset" value="Clear all" id="reset">
             <input type="submit" id="submit" value="Ok Submit">
         </form>
