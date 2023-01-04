@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <div class="form-container">
+        <form>
+            <label for="name">
+                <input type="text" id="name" placeholder="your name">
+            </label>
+            <label for="email">
+                <input type="email" id="email" placeholder="your email">
+            </label>
+            <label for="phn">
+                <input type="number" id="phn" placeholder="your mobile number">
+            </label>
+            <fieldset>
+                <legend>Types of pitha:</legend>
+                <label for="pitha">
+                    <input type="radio" id="pitha" name="pitha">
+                    Vapa
+                </label>
+                <label for="pitha">
+                    <input type="radio" id="pitha" name="pitha">
+                    Puli
+                </label>
+                <label for="pitha">
+                    <input type="radio" id="pitha" name="pitha">
+                    Patishapta
+                </label>
+            </fieldset>
+            <fieldset>
+                <legend>Types of vorta:</legend>
+                <label for="vorta">
+                    <input type="checkbox" id="vorta" name="vorta">
+                    alu
+                </label>
+                <label for="vorta">
+                    <input type="checkbox" id="vorta" name="vorta">
+                    begun
+                </label>
+                <label for="vorta">
+                    <input type="checkbox" id="vorta" name="vorta">
+                    dal
+                </label>
+            </fieldset>
+            <fieldset>
+                <legend>Message:</legend>
+                <textarea name="msg" id="msg" cols="60" rows="5"></textarea>
+            </fieldset>
+            <input type="reset" value="Clear all" id="reset">
+            <input type="submit" id="submit" value="Ok Submit">
+        </form>
+    </div><!--/form-container-->
+</body>
+</html>
