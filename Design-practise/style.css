@@ -10,16 +10,17 @@
 .donatebtn {
   padding: 14px 25px;
   color: #fff;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   background-color: #ea4b4b;
   border: 0;
-  border-radius: 5px;
+  border-radius: 4px;
 }
 
 #heading {
   font-size: 3rem;
   font-weight: 700;
   /* margin-bottom: 10px; */
+  /* text-align: center; */
   text-transform: capitalize;
 }
 #para {
@@ -78,6 +79,12 @@
   /* align-items: center; */
   gap: 30px;
 }
+.tk-btn h3:hover{
+  border: 1px solid #ea4b4b;
+  border-radius: 5px;
+  background-color: antiquewhite;
+  transition: 0.6s ease-in-out;
+}
 .tk-btn h3 {
   padding-top: 30px;
   width: 15%;
@@ -88,12 +95,7 @@
   font-weight: 700;
   /* box-shadow: 1px 1px 5px 4px #ddd; */
   background-color: rgba(0, 0, 0, 0.03);
-}
-#tk-200 {
-  border: 1px solid #ea4b4b;
-  border-radius: 5px;
-  background-color: antiquewhite;
-  margin-bottom: 60px;
+  margin-bottom: 50px;
 }
 #other{
     font-size: 18px;
@@ -205,4 +207,53 @@
   flex-wrap: nowrap;
   gap: 50px;
   width: 100%;
+}
+
+/* update section  */
+.update{
+  width: 50%;
+  margin: 50px auto;
+  /* text-align: center; */
+  margin-bottom: 150px;
+
+}
+
+.update > #heading{
+  text-align: center;
+}
+
+.subscribe{
+  margin-top: 10%;
+  background-color: #ffedcb;
+  width: 100%;
+  height: 200px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.subs-form{
+  padding: 0;
+}
+form{
+  display: flex;
+}
+.subs-form input{
+  /* width: 100%; */
+  padding: 12px 65px;
+  border: none;
+  background-color: #d2d1d1;
+  border-radius: 0px;
+  /* display: inline-block; */
+ color: #d2d1d1;
+}
+
+.subsbtn{
+  padding: 7px 15px;
+  color: #fff;
+  font-size: 1rem;
+  background-color: #ea4b4b;
+  border: 0 ;
+  border-radius: 0px;
+  /* display: inline-block; */
 }
