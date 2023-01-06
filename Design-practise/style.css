@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,400&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+.donatebtn{
+    padding: 14px 25px;
+    color: #fff;
+    font-size: 1.5rem;
+background-color: #ea4b4b;
+border: 0;
+border-radius: 5px;
+}
+.header{
+    width: 100vw;
+    height: 700px;
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url('images/donate2.jpg');
+    background-blend-mode:multiply;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.donate{
+    width: 70vw;
+    padding-top: 12%;
+    padding-left:30%;
+    text-align: center;
+    /* margin-bottom: 10px; */
+}
+.donate h1{
+    font-size: 4rem;
+    font-weight: 600;
+    text-transform: capitalize;
+    color: aliceblue;
+    margin-bottom: 20px;
+}
+.donate p{
+    font-size: 20px;
+    font-weight: 500;
+    color: #ddd;
+    margin-bottom: 20px;
+}
+
