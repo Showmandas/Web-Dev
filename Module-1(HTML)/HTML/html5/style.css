@@ -5,11 +5,11 @@
 }
 
 .main-section{
-    width: 50vw;
+    width:50vw;
     height: auto;
     margin: 2rem auto;
     /* background-color: #ddd; */
-    border: 1px solid;
+    /* border: 1px solid; */
     padding: 2rem 2rem;
     display: flex;
     justify-content: center;
@@ -17,9 +17,12 @@
 
 #article-section{
     padding: 0 1rem 0 1rem;
+    /* display: block; */
+
 }
 
-article{
+#article-section article{
+    /* width: 50vw; */
     border: 1px dotted;
     border-radius: 5px;
     margin-bottom: 1rem;
@@ -34,10 +37,10 @@ article{
     font-weight: 700;
     
 }
-article
+
 
 header{
-    background-color: #dd22dd;
+    /* background-color: #dd22dd; */
     width: 100%;
     height: 90px;
     text-align: center;
