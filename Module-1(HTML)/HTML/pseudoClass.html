@@ -26,6 +26,8 @@
         transition: .5s ease-in-out;
 
     }
+
+    /* pseudo class */
     .pseudo p:hover{
         color: blueviolet;
 
@@ -45,14 +47,47 @@
     input[type='text']:focus{
         color: blue;
     }
-    
+    .pseudo ul li:hover{
+        list-style: none;
+    }
+    .pseudo ul li:first-child{
+        color: blueviolet;
+    }
+    .pseudo ul li:last-child{
+        color: chartreuse;
+    }
+    .pseudo ul li:nth-child(2n){
+        color: brown;
+    }
+    .pseudo ul li:nth-child(2n+1){
+        color: darkcyan;
+    }
+    /* pseudo element  */
+   h3::before{
+    content: 'Hi ';
+   }
+   h3::after{
+    content: ' .How r u? ';
+   }
 </style>
 <body>
     <div class="pseudo">
         <p>Pseudo-->something or someone fake trying to pass as the real thing — a fraud or impostor</p>
         <h2>Hover me</h2>
         <a href="https://www.google.com/search?q=pseudo&oq=pseudo&aqs=chrome..69i57j0i131i433i512j46i131i433i512j0i512j0i433i512j69i60l3.8571j0j4&sourceid=chrome&ie=UTF-8">Visit me</a>
-        <input type="text"> 
+        <br><input type="text">
+        <ul>
+            <li>maria</li>
+            <li>faria</li>
+            <li>taria</li>
+            <li>jaria</li>
+            <li>paria</li>
+            <li>aria</li>
+            <li>naria</li>
+            <li>laria</li>
+        </ul> 
+<h3>dalia</h3>
+<h3>kalia</h3>
     </div>
 
 </body>
