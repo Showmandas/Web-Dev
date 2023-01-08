@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration form</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="main-div">
+        <h2>Create Account</h2>
+        <hr style="width: 100%;">
+      <form class="form">
+        <div class="form-input">
+          <label for="name">
+            <input type="text" id="name" placeholder="your full name" autocomplete="off" required/>
+          </label>
+        </div>
+        <!--/form-input-->
+        <div class="form-input">
+          <label for="email">
+            <input type="email" id="email" placeholder="your email" autocomplete="off" required />
+          </label>
+        </div>
+        <!--/form-input-->
+        <div class="form-input">
+          <label for="password">
+            <input type="password" id="pass" placeholder="new password" autocomplete="off" required />
+          </label>
+        </div>
+        <!--/form-input-->
+        <div class="form-input">
+          <label for="conpass">
+            <input
+              type="password"
+              id="conpass"
+              placeholder="confirm password"
+              autocomplete="off" required />
+          </label>
+        </div>
+        <!--/form-input-->
+        <button type="submit" id="submit">Submit</button>
+      </form>
+      <div class="otherlinks">
+        <a href="#">Forgot password</a>
+        <a href="#">Log in</a>
+      </div><!--/otherlinks-->
+       <div class="social-links"></div><!--/-->      
+    </div>
+    <!--/main-div-->
+  </body>
+</html>
