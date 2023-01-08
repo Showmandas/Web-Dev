@@ -32,10 +32,7 @@
         color: blueviolet;
 
     }
-    .pseudo h2:hover{
-        display: none;
 
-    }
     .pseudo a:hover{
         text-decoration: none;
         color: brown;
@@ -69,11 +66,20 @@
    h3::after{
     content: ' .How r u? ';
    }
+
+   #showtxt{
+    display: none;
+    color: #757575;
+    background-color: antiquewhite;
+    padding: 15px;
+   }
+   .tooltip:hover #showtxt{
+    display: block;
+   }
 </style>
 <body>
     <div class="pseudo">
         <p>Pseudo-->something or someone fake trying to pass as the real thing — a fraud or impostor</p>
-        <h2>Hover me</h2>
         <a href="https://www.google.com/search?q=pseudo&oq=pseudo&aqs=chrome..69i57j0i131i433i512j46i131i433i512j0i512j0i433i512j69i60l3.8571j0j4&sourceid=chrome&ie=UTF-8">Visit me</a>
         <br><input type="text">
         <ul>
@@ -88,6 +94,9 @@
         </ul> 
 <h3>dalia</h3>
 <h3>kalia</h3>
+        <div class="tooltip">Hover me to show content.
+            <p id="showtxt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, quibusdam?</p>
+        </div>
     </div>
 
 </body>
