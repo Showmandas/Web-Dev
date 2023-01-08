@@ -15,6 +15,10 @@ body{
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.5)),url('images/bg.jpg');
+    /* background-position: center; */
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 .main-div h2{
     font-size: 2rem;
@@ -33,7 +37,7 @@ body{
     /* background-color: #F49D1A; */
     padding: 30px 30px;
     border-radius: 5px;
-    box-shadow: 1px 1px 3px 1px #757575;
+    box-shadow: 1px 1px 3px 1px rgba(0,0,0,0.4);
 }
 
 form{
@@ -102,7 +106,7 @@ input:focus{
 }
 #key-icon{
     position: absolute;
-    top: 356px;
+    top: 190px;
     left: 1000px;
     color: #757575;
 }
@@ -125,6 +129,7 @@ input:focus{
     left: 1000px;
     color: #757575;
 }
+
 .social-links{
     display: flex;
     flex-direction: column;
