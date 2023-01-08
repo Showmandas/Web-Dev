@@ -15,6 +15,7 @@
         justify-content: center;
         align-items: center;
     }
+    /* pseudo class */
     .pseudo:hover{
         border: none;
         box-shadow: 1px 1px 4px 4px #ededed;
@@ -27,7 +28,6 @@
 
     }
 
-    /* pseudo class */
     .pseudo p:hover{
         color: blueviolet;
 
@@ -42,7 +42,8 @@
         color: blue;
     }
     input[type='text']:focus{
-        color: blue;
+        color: #fff;
+        background-color: darkgoldenrod;
     }
     .pseudo ul li:hover{
         list-style: none;
@@ -60,6 +61,16 @@
         color: darkcyan;
     }
     /* pseudo element  */
+    .pseudo p::before{
+        content: "* ";
+    }
+
+    .pseudo p::first-letter{
+        font-size: 3rem;
+        font-weight: 800;
+        color: blue;
+
+    }
    h3::before{
     content: 'Hi ';
    }
@@ -75,6 +86,7 @@
    }
    .tooltip:hover #showtxt{
     display: block;
+    transition: .5s ease-in-out;
    }
 </style>
 <body>
