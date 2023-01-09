@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>overflow css</title>
     <style>
+        :root{
+            --background-color:seagreen;
+        }
       .main-box {
         width: 500px;
         height: 400px;
@@ -47,11 +50,13 @@
         /* text-align: center; inline */
         /* margin: 0 auto; */
         position: relative;
-        background-color:bisque;
+        background-color:var(--background-color);
       }
-      .heading:nth-child(2n){
+      /* .heading:nth-child(2n){
         background-color: aqua;
-      }
+        visibility: hidden;
+        display: none;
+      } */
 
       .heading p {
         position: absolute;
@@ -59,6 +64,38 @@
         left: 45%;
         transform: translate(-45%, -40%);
       }
+      .div-img{
+        width: 700px;
+        height: 400px;
+        border: 1px solid #000;
+        margin-bottom: 200px;
+        overflow: hidden;
+      }
+      
+      .div-img-2{
+        width: 700px;
+        height: 400px;
+        border: 1px solid #000;
+        margin-bottom: 200px;
+        /* overflow: hidden; */
+        /* position: relative; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .div-img-2 img{
+        width: 100px;
+        height: 100px;
+        /* display: block; */
+        /* margin: auto; */
+        /* position: absolute; */
+        /* top: 50%; */
+        /* left: 50%; */
+        /* transform: translate(-50%,-50%); */
+      }
+      /* .div-img img{
+        overflow: hidden;
+      } */
     </style>
   </head>
   <body>
@@ -88,6 +125,8 @@
     </div>
     <!--/box-heading-->
 
+    <div class="div-img"><img src="https://hatrabbits.com/wp-content/uploads/2017/01/random.jpg" alt="random image"></div>
+    <div class="div-img-2"><img src="https://ichef.bbci.co.uk/news/640/cpsprodpb/37B5/production/_89716241_thinkstockphotos-523060154.jpg" alt="random image"></div>
     <div class="main-box">
       Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis
       sapiente aperiam nulla quasi provident odit eum enim illo dignissimos?
