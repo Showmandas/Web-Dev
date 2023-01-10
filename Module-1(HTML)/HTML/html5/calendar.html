@@ -9,12 +9,13 @@
       .my-calendar {
         display: grid;
         grid-template-columns: repeat(7, 1fr);
+        grid-template-rows: 50px repeat(7,150px);   /* 50px for first row and 150px for rest */ 
         row-gap: 20px;
         column-gap: 10px;
       }
-      .dates {
+      .dates,.day {
         width: 200px;
-        height: 150px;
+        /* height: 150px; */
         background-color: #f2ff2f;
         font-size: 2em;
         display: flex;
@@ -22,7 +23,7 @@
         align-items: center;
         border-radius: 5px;
       }
-      .other-month{
+      .other-month,.day{
         background-color: lightgray;
       }
     </style>
