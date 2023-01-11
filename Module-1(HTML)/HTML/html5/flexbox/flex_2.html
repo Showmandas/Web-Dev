@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hero Flex</title>
+    <style>
+      :root {
+        --primaryColor: #ffffff;
+        --secondaryColor: #aa5cdb;
+        --bgColor: #1e1e1e;
+        --divbg: #1b1938;
+        --font-family: "Inter", sans-serif;
+      }
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        background-color: var(--bgColor);
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .container {
+        width: 65%;
+        height: 65vh;
+        display: flex;
+        background-color: var(--divbg);
+        border-radius: 2rem;
+      }
+      .text_content {
+        width: 50%;
+        background-color: var(--divbg);
+        padding: 3rem;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        font-family: var(--font-family);
+        color: var(--primaryColor);
+      }
+      .text_content .txt {
+        font-weight: 700;
+        font-size: 1rem;
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        
+      }
+      .text_content .txt>p{
+        font-weight: 400;
+font-size: 1.2em;
+      }
+      .text_content .txt>h1>span{
+        color: var(--secondaryColor);
+      }
+      .text_content .txt_stat{
+        display: flex;
+        gap: 2.5rem;
+      }
+      .img_content {
+        width: 50%;
+        background-color: #ff00ff;
+      }
+      .img_content > img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: left;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="text_content">
+        <div class="txt">
+          <h1>Get <span>insights</span> that help your business grow.</h1>
+          <p>
+            Discover the benefit of data analytics and make better decisions
+            regarding revenue, customer experience and overall performance.
+          </p>
+        </div>
+        <!--/txt-->
+        <div class="txt_stat">
+          <div>
+            <h1>10k+</h1>
+            <p>CUSTOMERS</p>
+          </div>
+          <div>
+            <h1>10k+</h1>
+            <p>CUSTOMERS</p>
+          </div>
+          <div>
+            <h1>10k+</h1>
+            <p>CUSTOMERS</p>
+          </div>
+        </div>
+        <!--/txt_stat-->
+      </div>
+      <!--/text_content-->
+      <div class="img_content">
+        <img src="images/meeting.jpg" alt="meeting picture">
+      </div>
+      <!--/img_content-->
+    </div>
+  </body>
+</html>

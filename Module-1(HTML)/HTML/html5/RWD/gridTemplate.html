@@ -27,9 +27,8 @@
             /* gap: 1.5rem; */
         }
         .menu{
-            /* width: 33.33%; */
+            height: 100%;
             padding: 5rem;
-            display: grid;
             text-align: justify;
             background-color: #FFF6BD;
         }
@@ -58,7 +57,45 @@
             background-color: #86C8BC;
         }
 
+/* responsive */
+@media screen and (max-width:600px){
+    section{
+        grid-template-columns: repeat(1,1fr);
+    }
 
+    .menu ul li{
+        list-style: none;
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+        text-align: center;
+        border: 1px solid #86C8BC;
+        padding: 0.5rem;
+    }
+    .main p,.aside p{
+        font-size: 1.5rem;
+        text-align: justify;
+    }
+    
+    
+}
+@media screen and (max-width:800px){
+    /* for tablets */
+    section{
+        grid-template-columns: repeat(1,1fr);
+        font-size: 2rem;
+    }
+    .menu{
+        background-color: red;
+        grid-column: 1/4;
+    }
+    .main{
+        grid-column: 1/4;
+    }
+    .aside{
+        grid-column: 1/4;
+    }
+    
+}
         
 
     </style>
