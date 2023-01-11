@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Flex Layout</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            gap: 10px;
+            margin-top: 2rem;
+        }
+        .col_1{
+            background-color: #EAC7C7;
+            padding: 1.5rem;
+        }
+        .col_1:nth-child(2n){
+            background-color: #A0C3D2;
+        }
+
+        @media screen and (max-width:600px){
+            .container{
+                grid-template-columns: repeat(1,1fr);
+                padding: 2rem;
+            }
+
+        @media screen and (max-width:992px){
+            .container{
+                grid-template-columns: repeat(2,1fr);
+                padding: 2rem;
+            }
+            
+        }
+
+            
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="col_1">
+            <h1>html</h1>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Autem saepe architecto ullam nam delectus natus molestias laboriosam sequi odit quia. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste, recusandae? </p>
+        </div><!--/col_1-->
+        <div class="col_1">
+            <h1>css</h1>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Autem saepe architecto ullam nam delectus natus molestias laboriosam sequi odit quia.Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste, recusandae?</p>
+        </div><!--/col_1-->
+        <div class="col_1">
+            <h1>js</h1>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Autem saepe architecto ullam nam delectus natus molestias laboriosam sequi odit quia.Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste, recusandae?</p>
+        </div><!--/col_1-->
+        <div class="col_1">
+            <h1>react</h1>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Autem saepe architecto ullam nam delectus natus molestias laboriosam sequi odit quia.Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste, recusandae?</p>
+        </div><!--/col_1-->
+    </div><!--/container-->
+</body>
+</html>
