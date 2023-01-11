@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Flex Layout</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            display: flex;
+            flex-wrap: wrap;
+            padding: 2.5rem;
+        }
+        .col_1{
+            flex: 25%;
+            padding: 2rem;
+            box-shadow: 1px 1px 4px 5px #ddd;
+        }
+
+        /* responsive for large device */
+        @media screen and (max-width:992px){
+            .col_1{
+                flex: 50%;
+            }
+            
+        }
+        /* responsive for large device */
+        @media screen and (max-width:600px){
+            .container{
+                flex-direction: column;
+            }
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="col_1">
+            <h1>html</h1>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Autem saepe architecto ullam nam delectus natus molestias laboriosam sequi odit quia. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste, recusandae? </p>
+        </div><!--/col_1-->
+        <div class="col_1">
+            <h1>css</h1>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Autem saepe architecto ullam nam delectus natus molestias laboriosam sequi odit quia.Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste, recusandae?</p>
+        </div><!--/col_1-->
+        <div class="col_1">
+            <h1>js</h1>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Autem saepe architecto ullam nam delectus natus molestias laboriosam sequi odit quia.Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste, recusandae?</p>
+        </div><!--/col_1-->
+        <div class="col_1">
+            <h1>react</h1>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Autem saepe architecto ullam nam delectus natus molestias laboriosam sequi odit quia.Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste, recusandae?</p>
+        </div><!--/col_1-->
+    </div><!--/container-->
+</body>
+</html>
