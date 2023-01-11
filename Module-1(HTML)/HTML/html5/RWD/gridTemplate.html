@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Template</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        header,footer{
+            width: 100%;
+            height: 80px;
+            padding: 1.2rem 5rem;
+            text-align: center;
+            background-color: #86C8BC;
+            font-size: 1rem;
+            color: #fff;
+        }
+        section{
+            display: grid;
+            grid-template-columns: 1fr 3fr 1fr;
+            /* margin-bottom: 10%; */
+            /* gap: 1.5rem; */
+        }
+        .menu{
+            /* width: 33.33%; */
+            padding: 5rem;
+            display: grid;
+            text-align: justify;
+            background-color: #FFF6BD;
+        }
+        .main{
+            background-color: #FFD4B2;
+        }
+        .main h2,p{
+            padding: 2rem;
+        }
+
+        .aside{
+            background-color: #FFF6BD;
+        }
+        
+        .aside h2,p{
+            padding: 2rem;
+        }
+        section::after{
+            content: '';
+            clear: both;
+            display: table;
+        }
+        footer{
+            width: 100%;
+            height: 80px;
+            background-color: #86C8BC;
+        }
+
+
+        
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Showman</h1>
+    </header>
+    <section>
+        <div class="menu">
+            <ul>
+                <li>Home</li>
+                <li>about</li>
+                <li>tutorial</li>
+            </ul>
+        </div><!--/menu-->
+        <div class="main">
+            <h2>main content</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem culpa quo optio asperiores a quibusdam odio repellendus, quaerat fuga expedita. Amet recusandae, natus illum doloremque sint dolor quos inventore. Impedit nihil, natus obcaecati deserunt laborum, hic optio ducimus, eveniet quas reiciendis sed delectus facilis voluptatem quae architecto cumque in laboriosam id dicta beatae. Consequuntur molestias modi non deserunt ad nulla provident veniam doloremque cumque id. Modi culpa error delectus, voluptatum quia aliquid provident, itaque voluptas possimus debitis amet nostrum odit laudantium perspiciatis praesentium dolor, a rem reprehenderit magnam eveniet officia ab velit at. Eius dolorem praesentium accusamus mollitia, totam voluptatibus? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam quidem maiores, nihil ipsam non ad consectetur fuga ut fugit? Tempore saepe neque mollitia excepturi. Omnis dolorum, suscipit, itaque cupiditate nobis minima minus possimus esse quae ratione natus dolor aperiam corporis qui quas deserunt earum maiores. Reprehenderit, amet? Voluptate, sapiente? Ipsum! </p>
+        </div><!--/main-->
+        <div class="aside">
+            <h2>About</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam modi accusantium nemo laboriosam. Quam fugit et enim fuga ex? Eum incidunt ex, sint ipsum provident voluptatum at voluptatem optio, mollitia nobis nihil eos consectetur quaerat nesciunt reprehenderit, ratione quos! Impedit at fugiat necessitatibus cupiditate, modi rerum vero perferendis fuga temporibus! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum beatae sapiente tempore voluptas exercitationem natus obcaecati magni earum minus! Voluptatibus? </p>
+        </div><!--/aside-->
+    </section>
+    <footer>
+        <h1>Showman</h1>
+    </footer>
+</body>
+</html>
