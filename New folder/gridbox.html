@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        :root{
+            --row-1-color:pink;
+            --row-2-color:rgb(209, 20, 70);
+            --row-3-color:aquamarine;
+            --row-4-color:rgba(62, 209, 13, 0.9);
+            --row-4-color-2:rgba(209, 61, 7, 0.955);
+        }
+    .grid-container{
+        width: 100%;
+        height: 100%;
+        display:grid;
+        grid-template-columns: repeat(4,1fr);
+        gap: 1rem;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    .grid-item-1{
+        height: 100px;
+        background-color: var(--row-1-color);
+        border: 1px solid #fff;
+        grid-column: 1/-1;
+    }
+    .grid-item-2{
+        height: 100px;
+        background-color: var(--row-2-color);
+        border: 1px solid #fff;
+        grid-column: 1;
+    }
+    .grid-item-3{
+        height: 100px;
+        background-color: var(--row-2-color);
+        border: 1px solid #fff;
+        grid-column: 2;
+    }
+    .grid-item-4{
+        height: 100px;
+        background-color: var(--row-2-color);
+        border: 1px solid #fff;
+        grid-column: 3;
+    }
+    .grid-item-5{
+        height: 100px;
+        background-color: var(--row-2-color);
+        border: 1px solid #fff;
+        grid-column: 4;
+    }
+    .grid-item-6{
+        height: 100px;
+        background-color: var(--row-3-color);
+        border: 1px solid #fff;
+        grid-column: 1/3;
+    }
+    .grid-item-7{
+        height: 100px;
+        background-color:var(--row-3-color);
+        border: 1px solid #fff;
+        grid-column: 3/-1;
+    }
+    .grid-item-8{
+        height: 100px;
+        background-color: var(--row-4-color);
+        border: 1px solid #fff;
+        grid-column: 1/4;
+    }
+    .grid-item-9{
+        height: 100px;
+        background-color: var(--row-4-color-2);
+        border: 1px solid #fff;
+        grid-column: -2;
+    }
+
+
+    /* responsive for mobile  */
+    @media screen and (max-width:576px){
+        .grid-container{
+            grid-template-columns: repeat(1,1fr);
+            /* grid-template-rows: repeat(9,1fr); */
+        }
+        .grid-item-2{
+            grid-column: 1/-1;
+        }
+        .grid-item-3{
+            grid-column: 1/-1;
+        }
+        .grid-item-4{
+            grid-column: 1/-1;
+        }
+        .grid-item-5{
+            grid-column: 1/-1;
+        }
+        .grid-item-6{
+            grid-column: 1/-1;
+        }
+        .grid-item-7{
+            grid-column: 1/-1;
+        }
+        .grid-item-8{
+            grid-column: 1/-1;
+        }
+        .grid-item-9{
+            grid-column: 1/-1;
+        }
+    }
+    
+    </style>
+</head>
+<body>
+    <div class="grid-container">
+        <div class="grid-item-1"></div>
+        <div class="grid-item-2"></div>
+        <div class="grid-item-3"></div>
+        <div class="grid-item-4"></div>
+        <div class="grid-item-5"></div>
+        <div class="grid-item-6"></div>
+        <div class="grid-item-7"></div>
+        <div class="grid-item-8"></div>
+        <div class="grid-item-9"></div>
+    </div><!--/grid-container-->
+</body>
+</html>

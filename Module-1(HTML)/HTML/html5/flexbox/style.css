@@ -1,0 +1,130 @@
+:root {
+    --primaryColor: #ffffff;
+    --secondaryColor: #aa5cdb;
+    --bgColor: #1e1e1e;
+    --divbg: #1b1938;
+    --font-family: "Inter", sans-serif;
+  }
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    background-color: var(--bgColor);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .container {
+    width: 65%;
+    height: 65vh;
+    display: flex;
+    /* flex-wrap: wrap; */
+    background-color: var(--divbg);
+    border-radius: 2rem;
+  }
+  .text_content {
+    width: 50%;
+    background-color: var(--divbg);
+    padding: 3rem;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    font-family: var(--font-family);
+    color: var(--primaryColor);
+  }
+  .text_content .txt {
+    font-weight: 700;
+    font-size: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    
+  }
+  .text_content .txt>p{
+    font-weight: 400;
+font-size: 1.2em;
+  }
+  .text_content .txt>h1>span{
+    color: var(--secondaryColor);
+  }
+  .text_content .txt_stat{
+    display: flex;
+    gap: 2.5rem;
+  }
+  .img_content {
+    width: 50%;
+    background-color: #ff00ff;
+    position: relative;
+  }
+  .img_content > img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: left;
+    position: absolute;
+    filter: grayscale(1);
+    opacity: 0.8;
+    filter: var(--secondaryColor);
+    z-index: 50;
+  }
+
+  /* responsive */
+  /* for mobile  */
+ 
+@media screen and (max-width:1200px) {
+    .text_content{
+        width: 70%;
+    }
+    .img_content{
+        width: 30%;
+    }
+ .txt h1{
+    font-size: 1.8rem;
+ }   
+ .txt p{
+    font-size: 0.9rem !important;
+    /* color: red */
+ }
+ .txt_stat div>h1{
+    font-size: 1.2rem;
+ }
+}
+
+/* tablet */
+@media screen and (max-width:800px) {
+    .container{
+        flex-direction:column-reverse;
+    }
+    .text_content,.img_content{
+        width: 100%;
+    }
+    
+}
+
+@media  screen and (max-width:500px) {
+    .container{
+        flex-direction:column-reverse;
+    }
+    .text_content,.img_content{
+        width: 100%;
+    }
+    .text_content{
+        padding: 0px;
+        margin-bottom: 10px;
+    }
+ .txt h1{
+    font-size: 1.2rem;
+ }   
+ .txt p{
+    font-size: 0.8rem !important;
+    /* color: red */
+ }
+ .txt_stat div>h1{
+    font-size: 1.2rem;
+ }
+       
+}
