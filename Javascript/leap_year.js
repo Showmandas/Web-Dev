@@ -7,4 +7,5 @@ function leapYear(year){
     }
 }
 
-console.log(leapYear(2016))
+// console.log(leapYear(2016))
+console.log(leapYear(2023))
