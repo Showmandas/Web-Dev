@@ -1,4 +1,4 @@
-var marks=40;
+var marks=50;
 
 // check grades 
 
