@@ -1,15 +1,15 @@
 function findOddSum(nums){
-    // let sum=0
-    let oddnum=[]
+    var sum=0
+    var oddnum=[]
     for(let i=0;i<nums.length;i++){
-        const index=i
-        const elem=nums[index]
-        if(elem % 2 === 1){
-            // sum=sum+nums[i]
-            console.log(elem)
-            oddnum.push(elem)
+        var elem=nums[i]
+        if(elem % 2 == 1){
+            sum=sum+elem
+            // oddnum.push(sum)
         }
     }
+    console.log(sum)
+
     // return nums[i]
 
     // return sum;
@@ -17,4 +17,4 @@ function findOddSum(nums){
 }
 
 var numbers=[5, 7, 8, 10, 45, 30];
-console.log(numbers)
+findOddSum(numbers)
