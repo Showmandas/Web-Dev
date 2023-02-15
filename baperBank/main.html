@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>baper bank</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+<body>
+    <header>
+        <h1 class="text-center text-5xl mt-6">Let's go for  <span class="text-amber-600">Money</span></h1>
+
+    </header>
+    <main>
+        <section class="mt-12">
+            <div class="grid grid-cols-3 gap-4 w-3/4 mx-auto text-center text-white">
+                <div class="bg-amber-600 p-8">
+                    <h4 class="text-2xl">Deposit</h4>
+                    <h2 id="showdep" class="text-4xl font-medium">$0</h2>
+                </div>
+                <div class="bg-amber-400 p-8">
+                    <h4 class="text-2xl">Withdraw</h4>
+                    <h2 class="text-4xl font-medium">$0</h2>
+                </div>
+                <div class="bg-amber-800 p-8">
+                    <h4 class="text-2xl">Balance</h4>
+                    <h2 class="text-4xl font-medium" id="net">$1000</h2>
+                </div>
+            </div>
+        </section>
+    </main>
+    <div class="show">
+        <p>deposit: <span id="showdep"></span></p>
+        <p>withdraw: <span id="showwith"></span></p>
+        <p>balance: <span id="net">1000</span></p>
+    </div>
+
+    <div class="deposit">
+        <input type="text" id="dep">
+        <button id="depbtn">deposit</button>
+    </div>
+
+    <div class="withdraw">
+        <input type="text" id="draw">
+        <button id="drawbtn">withdraw</button>
+    </div>
+
+    <script src="main.js"></script>
+    <script src="withdraw.js
+    "></script>
+    <script src="login.js"></script>
+</body>
+</html>

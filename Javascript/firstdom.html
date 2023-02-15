@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom</title>
+</head>
+<body>
+    <h1>Heading Dom</h1>
+    <ul>
+        <li class="hello">hello</li>
+        <li>tello</li>
+        <li>fello</li>
+        <li>sello</li>
+    </ul>
+
+    <h2 id='head'>dom</h2>
+    <ul>
+        <li class="lom">tom</li>
+        <li class="lom">lom</li>
+        <li class="lom">pom</li>
+    </ul>
+
+    <p>kora</p>
+    <p>mora</p>
+    <p>pora</p>
+
+    <div id="msgContainer">
+
+    </div>
+
+    <textarea name="" id="msgbox" cols="60" rows="8"></textarea>
+    <br>
+    <button id="msg_btn">Message</button>
+    <script>
+        // single element selector:
+        // 1.getElementById()
+        // 2.querySelector()
+        // let h1=document.querySelector('h1').style.color='red';
+        // let h1txt=document.querySelector('h1').innerHTML='Hello Dom';
+        // let hello=document.querySelector('.hello');
+        // hello.textContent='hello boss';
+
+
+        // head=document.getElementById('head')
+        //head.textContent='ok dom!'
+
+        // multiple element selector 
+        // const para=document.getElementsByTagName('p');
+        // for(let i=0;i<para.length;i++){
+        //     para[i].textContent='chora';
+        //     para[i].style.color='yellow';
+        //     para[i].style.backgroundColor='red';
+        //     para[i].style.width='50px';
+        //     para[i].style.textAlign='center';
+
+
+        // } 
+
+
+
+        let msg_btn=document.getElementById('msg_btn');
+        msg_btn.addEventListener('click',function(){
+            let msgbox=document.getElementById('msgbox');
+            let inpMsg=msgbox.value;
+
+            let msgContainer=document.getElementById('msgContainer');
+
+            let newP=document.createElement('p');
+            newP.textContent=inpMsg;
+            msgContainer.appendChild(newP);
+            msgbox.value='';
+        })
+
+
+    </script>
+</body>
+</html>
