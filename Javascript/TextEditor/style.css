@@ -25,12 +25,13 @@ font-family: 'Lato', sans-serif;
     background-color: #ddd;
 }
 .txtFormat div i{
+    cursor: pointer;
     padding: 0.5rem;
-    color: #181823;
+    color: #fff;
+    background-color: #393053;
 }
 .txtArea{
     margin-top: 2.5rem;
-    /* margin: auto; */
 padding: 1rem;
 }
 #txt{
@@ -50,4 +51,26 @@ padding: 1rem;
     font-size: 1.2rem;
     margin-bottom: 2rem;
     font-weight: bold;
+}
+
+
+
+/* responsive  */
+@media screen and (max-width:576px){
+    .container{
+        width: 100%;
+    }
+ .txtFormat{
+    width: 100%;
+    gap: 1.5rem;
+ }
+
+ #txt{
+    width: 100%;
+ }
+
+ #footerTxt{
+    margin-top: 2rem;
+    margin-bottom: 0;
+ }
 }
