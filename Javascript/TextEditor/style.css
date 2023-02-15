@@ -30,12 +30,22 @@ font-family: 'Lato', sans-serif;
     color: #fff;
     background-color: #393053;
 }
+
+input[type=number]{
+    outline: none;
+    border: none;
+    padding: 0.4rem;
+}
+input[type=color]{
+    outline: none;
+    border: none;
+}
 .txtArea{
     margin-top: 2.5rem;
 padding: 1rem;
 }
 #txt{
-    padding: 0;
+    padding: 1rem;
     margin: 0 auto;
     width: 100%;
     height: 320px;
@@ -43,6 +53,7 @@ padding: 1rem;
     border: nono;
     outline: none;
     border-radius: 0.5rem;
+    /* box-shadow: 5px 5px 15px #181818; */
 }
 
 #footerTxt{
