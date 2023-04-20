@@ -16,13 +16,16 @@ html{
 :root{
     --primary:#1a8971;
     --secondary:#60bfaa;
-    --other: #515151;
+    --other: #5a5a5a;
     --fw-1:bold;
 }
 .wrapper{
     width: 1100px;
     margin: 0 auto;
     text-align: justify;
+}
+p{
+    color: var(--other);
 }
 #brand{
     color: #fff;
@@ -71,9 +74,21 @@ ul li a{
     gap: 2rem;
 }
 
-/* .aboutSection{
+.socialLinks{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin: 2rem;
+}
+.socialLinks i{
+color: var(--secondary);
+}
 
-} */
+.aboutSection h1{
+    text-align: center;
+
+}
 #personFig{
     width: 500px;
     text-align: center;
@@ -92,6 +107,7 @@ ul li a{
 /* course part  */
 
 #course h1,h3{
+    margin-top: 50px;
     text-align: center;
 }
 .courseSection{
@@ -242,4 +258,17 @@ textarea{
 }
 #contactForm,input,textarea{
     width: 50%;
+}
+
+/* footer part  */
+
+footer{
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+footer p{
+    color: var(--other);
+    font-size: 1rem;
+    font-weight:400;
 }
