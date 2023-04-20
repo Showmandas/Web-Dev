@@ -42,10 +42,17 @@
                 <h1>HTML best crash course for you</h1>
                 <h3>The best course ever</h3>
                 <div class="courseSection">
-                    <figure>
-                        <img src="https://images.unsplash.com/photo-1632882765546-1ee75f53becb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8aHRtbHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60" alt="html image">
-                        <figcaption>html course picture</figcaption>
-                    </figure>
+                    <div class="courseFigure">
+
+                        <figure>
+                            <img src="https://images.unsplash.com/photo-1632882765546-1ee75f53becb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8aHRtbHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60" alt="html image" id="courseImg">
+                            <figcaption>HTML course picture</figcaption>
+                        </figure><br><br>
+                        <figure>
+                            <img src="https://images.unsplash.com/photo-1523437113738-bbd3cc89fb19?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=871&q=80" alt="html image" id="courseImg">
+                            <figcaption>CSS course picture</figcaption>
+                        </figure>
+                    </div><!--/courseFigure-->
                     <div class="aboutCourse">
                         <p style="color:#1a8971">
                             <i>Lorem</i> ipsum dolor sit amet, consectetur adipisicing elit. Ea natus itaque, explicabo harum hic autem cupiditate tenetur consequuntur pariatur! Cupiditate illum quos officia ea ex qui expedita ratione? Reiciendis esse iure culpa, minima, ducimus, perferendis temporibus hic at nobis sunt quam voluptates incidunt ipsa fuga quos facere? Aperiam, inventore eveniet? Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure molestias distinctio corrupti inventore dolorem? Modi, non eum deleniti sed dolorem fugit qui quaerat enim pariatur eaque at, cupiditate ipsam iusto? Unde consectetur, minus omnis asperiores, impedit quia eum dignissimos fuga sit, a maiores nam dolor adipisci harum itaque distinctio quasi?
@@ -53,22 +60,22 @@
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore adipisci suscipit doloribus nihil ipsam pariatur eaque architecto cumque quam incidunt vel provident,<mark> deserunt animi sed quae iusto,</mark> quod laborum praesentium numquam eligendi. Odio enim ad harum cum deserunt. Nam, reiciendis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae dignissimos odio vitae, non minus eveniet necessitatibus explicabo sed at sunt, quidem nihil ea velit. Doloribus id accusamus fugit harum veritatis.
                         </p><br>
                         <p><em style="background-color: #1a8971;color: #fff; padding: 2px;">Lorem ipsum</em>, dolor sit amet consectetur adipisicing elit. Ea accusamus eveniet alias, dolorem ipsa molestiae fuga voluptates optio cum odit aut! Quasi cupiditate aspernatur asperiores porro provident, ratione perferendis eos!
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquid, praesentium blanditiis alias illo provident expedita nam in illum sunt dolores.</p>
-        
-                        <h5>My courses are uploaded in <a title="HTML video" style="background-color: #1a8971;color: #fff;">my youtube channel</a></h5>
-        
-                        <p>
-                            <p><b>I have a welcome course audio for you</b></p>
-                            <audio controls src="ratsasan.mp3"></audio>
-                        </p>
-                        <p>
-                            <p>Here has some reason for starting this course.It will help:</p>
-                            <ol>
-                                <li><kbd>Know html</kbd>
-                                <li><kbd>Learn html</kbd></li>
-                                <li><kbd>Practise html</kbd></li>
-                            </ol>
-                        </p>
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquid, praesentium blanditiis alias illo provident expedita nam in illum sunt dolores.</p>
+            
+                            <h5>My courses are uploaded in <a title="HTML video" style="background-color: #1a8971;color: #fff;">my youtube channel</a></h5>
+            
+                            <p>
+                                <p><b>I have a welcome course audio for you</b></p>
+                                <audio controls src="ratsasan.mp3"></audio>
+                            </p>
+                            <p>
+                                <p>Here has some reason for starting this course.It will help:</p>
+                                <ol>
+                                    <li><kbd>Know html</kbd>
+                                    <li><kbd>Learn html</kbd></li>
+                                    <li><kbd>Practise html</kbd></li>
+                                </ol>
+                            </p>
                     </div><!--/aboutCourse-->
                     
 
@@ -98,7 +105,10 @@
                     <br><br>
                 </section>
                 <div id="contactForm">
-                    <form action="https://formspree.io/f/mjvdjgae"
+                    <div class="form">
+                        <h3>Contact Me</h3>
+
+                        <form action="https://formspree.io/f/mjvdjgae"
                     method="POST">
                         <div>
                             <label>Your name</label><br>
@@ -109,11 +119,14 @@
                             <input type="email" name="email" id="email" placeholder="email" autocomplete="off" required>
                         </div><br>
                         <div>
-                            <label>Message</label><br>
-                            <textarea name="message" rows="10" cols="30" id="message" autocomplete="off" required></textarea>
+                            <label>Message</label><br><br>
+                            <textarea name="message" rows="10" cols="30" id="message" autocomplete="off" placeholder="Write your feedback here" required></textarea>
                         </div><br>
-                        <input type="submit" value="submit"/>
+                        <input type="submit" value="Contact" id="contactBtn"/>
                     </form>
+
+                    </div><!--/form-->
+                    
                 </div>
             </section>
         </main>
