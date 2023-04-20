@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slider</title>
+</head>
+<body>
+    <div class="slider" style="display:flex;justify-content: center;align-items: center;height: 500px;">
+        <div class="slider-img">
+            <img id="slider-img" src="images/img1.avif" alt="">
+        </div>
+
+    </div><!--/slider-->
+
+    <script>
+        let images=[
+            'images/img1.avif',
+            'images/img2.avif',
+            'images/img3.avif',
+            'images/img4.avif',
+            'images/img5.avif',
+        ]
+        let imgInd=0;
+        let imgEl=document.getElementById('slider-img');
+        setInterval(()=>{
+            if(imgInd === images.length){
+                imgInd=0;
+            }
+            let imgUrl=images[imgInd];
+            imgEl.setAttribute('src',imgUrl);
+            console.log(imgInd,imgUrl);
+            imgInd++;
+
+        }
+        ,1000)
+    </script>
+</body>
+</html>

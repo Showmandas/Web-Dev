@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sports DB</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body class="container mx-auto">
+    <header>
+      <h1 class="text-center mb-5">welcome to sportsdb</h1>
+    </header>
+    <main>
+      <div class="row container mx-auto">
+        <div class="col-lg-7 p-3">
+          <div class="d-flex" role="search">
+            <input
+              id="searchInp"
+              class="form-control me-2 w-50"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button
+              onclick="loadData()"
+              class="btn btn-outline-success"
+              type="submit"
+            >
+              Search
+            </button>
+          </div>
+          <div id="spinner" class="d-flex justify-content-center my-5 d-none">
+            <div class="spinner-border" role="status">
+              <span class="visually-hidden">Loading...</span>
+            </div>
+          </div>
+          <div id="player-info" class="row row-cols-1 row-cols-md-3 g-4"></div>
+        </div>
+        <div class="col-lg-5 p-3 bg-warning">
+            <div>
+                <img class="w-75 h-50 my-2 d-none" src="images/male.jpeg" alt="male image" id="maleimg">
+                <img class="w-75 h-50 my-2 d-none" src="images/female.jpg" alt="female image" id="femaleimg">
+            </div>
+          <h1>right side</h1>
+          <div id="playerDetails">
+
+          </div>
+        </div>
+      </div>
+    </main>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+    <script src="main.js"></script>
+  </body>
+</html>

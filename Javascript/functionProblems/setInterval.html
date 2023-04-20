@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="show">0</h1>
+    <button id="start">Start</button>
+    <button id="stop">Stop</button>
+    <button id="reset">Reset</button>
+
+
+
+    <script>
+        let setCount;
+    //    start count 
+        document.getElementById('start').addEventListener('click',()=>{
+            let count=0;
+            setCount=setInterval(()=>{
+                document.getElementById('show').innerHTML=count++;
+
+            },1000)
+        })
+
+        // stop count 
+        document.getElementById('stop').addEventListener('click',()=>{
+            
+           clearInterval(setCount);
+        })
+
+        // reset 
+        document.getElementById('reset').addEventListener('click',()=>{
+            clearInterval(setCount);
+            document.getElementById('show').innerHTML=0;
+         })
+        
+
+
+    </script>
+</body>
+</html>
