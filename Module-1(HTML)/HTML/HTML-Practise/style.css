@@ -138,8 +138,42 @@ margin-bottom: 50px;
 .blogSection{
     display: grid;
     grid-template-columns: repeat(3,1fr);
-    gap: 3rem;
+    place-content: center;
+    gap: 2.5rem;
     margin-bottom: 50px;
+}
+
+#links{
+    width: 100%;
+    background-color: var(--secondary);
+    height: auto;
+    margin: 2rem;
+    padding: 2rem 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+#links a{
+    width: 100%;
+    text-decoration: none;
+    color: #fff;
+    font-weight: var(--fw-1);
+    font-size: 1.1rem;
+    padding: 1.5rem;
+    border-bottom: 1px solid;
+    text-align: center;
+}
+
+#links a:hover{
+    /* border: 1px solid var(--secondary); */
+    /* padding: 2rem; */
+    background-color: var(--primary);
+    width: 100%;
+    text-align: center;
+    border: none;
 }
 
 /* contact part  */
