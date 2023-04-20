@@ -14,14 +14,15 @@
     <div class="wrapper">
         <header>
             <a href="index.html" id="brand">Showman Das</a>
-            <nav>
-                <ul>
-                    <li><a href="#">Home</a></li>
+            <nav id="navItem">
+                <ul id="items">
+                    <li><a href="#" class="active">Home</a></li>
                     <li><a href="#about">About</a></li>
                     <li><a href="#course">Course</a></li>
                     <li><a href="#contact">Contact</a></li>
                     <li><a href="#blog">Blog</a></li>
                 </ul>
+                <i class="fa-solid fa-bars fa-2x" id="Bars"></i>
             </nav>
         </header>
         <main>
@@ -76,14 +77,14 @@
                                 <p><b>I have a welcome course audio for you</b></p>
                                 <audio id="audio" controls src="ratsasan.mp3"></audio>
                             </div>
-                            <p>
+                            <div>
                                 <p>Here has some reason for starting this course.It will help:</p>
                                 <ol>
                                     <li><kbd>Know html</kbd>
                                     <li><kbd>Learn html</kbd></li>
                                     <li><kbd>Practise html</kbd></li>
                                 </ol>
-                            </p>
+                            </div>
                     </div><!--/aboutCourse-->
                     
 
@@ -149,5 +150,25 @@
             <p>Copyright &copy; 2023,all rights reserved</p>
         </footer>
     </div>
+    <script>
+        let bars=document.getElementById('Bars')
+        let navItem=document.getElementById('navItem');
+        let items=document.getElementById('items')
+        bars.addEventListener('click',()=>{
+            navItem.classList.toggle('active');
+            items.classList.toggle('open')
+            if(items.classList.contains('open')){
+                items.style.visibility='visible';
+                // navItem.style.flexDirection='column';
+                // items.style.width='100%'
+            }else{
+                items.style.visibility='hidden';
+
+                
+            }
+            // .style.display='block';
+            console.log('clicked');
+        })
+    </script>
 </body>
 </html>

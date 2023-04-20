@@ -10,6 +10,14 @@ html{
     font-family: 'Work Sans', sans-serif;
 
 }
+.active{
+    /* width: 100%; */
+    height: 200px;
+    background-color: var(--secondary);
+    /* display: block; */
+    /* opacity: 0; */
+}
+
 
 
 /* common css */
@@ -26,6 +34,14 @@ html{
 }
 p{
     color: var(--other);
+}
+
+#Bars{
+    display: none;
+    color: #fff;
+}
+#checkBar{
+    display: none;
 }
 #brand{
     color: #fff;
@@ -50,6 +66,9 @@ nav ul{
     justify-content: center;
     align-items: center;
     gap: 1.5rem;
+}
+#navItem ul{
+    opacity: 1;
 }
 ul li{
     list-style: none;
@@ -293,10 +312,46 @@ footer p{
         flex-direction: column;
         /* padding: 0; */
     }
-    nav ul{
-        /* flex-direction: column; */
+    #navItem{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        /* overflow: hidden; */
+        /* align-items: center; */
     }
-
+    #Bars{
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+    #checkBar{
+        display: block;
+    }
+    #navItem #items{
+        /* flex-direction: column; */
+        /* position: fixed; */
+        left: 0;
+        visibility: hidden;
+        /* color: #fff; */
+    }
+    #navItem #items .open{
+        visibility: visible;
+    }
+    /* #navItem ul{
+        opacity: 0;
+    } */
+   
+    /* #checkBar:only-child ~ ul{
+        left: 0;
+    } */
+    /* nav ul{
+        flex-direction: column;
+    } */
+    #Bars{
+        display: block;
+    }
+    
     #about{
         flex-direction: column;
         justify-content: center;
@@ -319,6 +374,8 @@ footer p{
         /* margin: 0 auto; */
         justify-content: center;
         align-items: center;
+        flex-direction: column;
+
     }
     .aboutCourse{
         width: 300px;
@@ -330,14 +387,7 @@ footer p{
     .socialLinks{
         flex-direction: column;
     }
-    .courseSection{
-        flex-direction: column;
-    }
-    .blogLinks{
-        width: 300px;
-        /* margin: 0 auto; */
-        /* padding: 0; */
-    }
+    
     #links{
         width: 200px;
 
@@ -345,22 +395,12 @@ footer p{
     .blogSection{
         display: grid;
         grid-template-columns: 1fr;
-    }
-    #contact{
-        margin: 0 auto;
-        /* margin-left: 1rem; */
-    }
-    #maps{
-        width: 300px;
-       /* margin: 0 auto; */
-       /* margin-left: 1.3rem; */
-    }
-    #contactForm{
-        width: 100%;
-    }
-    .blogSection{
         place-items: center;
+
     }
+    
+    
+    
     .blog-1{
         width: 250px;
     }
