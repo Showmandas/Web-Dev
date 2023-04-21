@@ -5,9 +5,90 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="main.css" rel="stylesheet">
 </head>
-<body>
-  <h1 class="text-3xl font-bold underline bg-red-500">
-    Hello world!
-  </h1>
+<body class="bg-white bgcolor">
+  <header class="container mx-auto">
+    <div class="navbar mx-auto p-5">
+      <div class="flex-1 text-amber-700">
+        <a class="btn btn-ghost normal-case  text-2xl font-semibold">Showman</a>
+      </div>
+      <div class="flex-none">
+        <ul class="menu menu-horizontal text-amber-600 px-1">
+          <li><a>Home</a></li>
+          <li>
+            <a>
+              About
+            </a>
+          </li>
+          <li><a>Services</a></li>
+          <li><input type="checkbox" class="toggle mt-3 px-5" id="Toggle" /></li>
+        </ul>
+      </div>
+    </div>
+  </header><!--/wrapper-->
+  <section class="container flex  mx-auto">
+    <article class="mt-44 p-16">
+      <div class="flex flex-col">
+        <h1 class="text-4xl font-bold text-amber-600 mb-8">Tailwind + daisyUi</h1>
+      <p class="text-xl font-bold text-amber-400 mb-8">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Temporibus, delectus! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Earum ut labore iusto sunt dolor itaque, consectetur excepturi cum debitis quos? Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima recusandae delectus et labore ullam eum ducimus, voluptatem reprehenderit accusantium maiores fugiat, consectetur earum iusto tempora! Asperiores aliquid, consequatur, recusandae harum quae incidunt dolores omnis vero quisquam rem minus doloribus natus nisi <span class="readMore text-slate-500 text-xl font-semibold" onclick="readMore()" id="toggleText">Read More</span><span class="hidden" id="ReadText"> quas at, eos ipsam reprehenderit! Voluptatem voluptatum aperiam ipsam atque nulla fugit enim sit nihil nesciunt quos impedit mollitia, eos accusantium quas libero repudiandae soluta odio voluptates. Culpa quia, fuga sequi ab ex corrupti deleniti ipsam. Cumque aspernatur ipsum incidunt, animi neque tenetur ut deleniti fuga atque voluptatem sequi, ratione doloremque totam optio est autem vero quod, aut vel?
+        <span class="readMore text-slate-500 text-xl font-semibold" onclick="readMore()" id="toggleText">Read Less</span>
+      </span></p>
+      </div>
+    </article>
+
+<aside class="flex flex-col justify-center align-baseline mt-50">
+  <button class="btn font-semibold h-20  text-xl w-56 btn-secondary" id="textToggle" onclick="toggle()">Show Our Criteria</button>
+      <div class="hidden mt-9"  id="Texts">
+        <ul class="list-disc flex flex-col gap-y-5 text-slate-500 font-semibold">
+          <li>Dancing</li>
+          <li>Singing</li>
+          <li>Tabla Playing</li>
+          <li>Playing</li>
+          <!-- ... -->
+        </ul>
+      </div>
+</aside>
+</section>
+<section class=" container flex justify-center align-baseline">
+  <div class="person w-80">
+<img src="./images/personQues.gif" alt="">
+  </div>
+  <div class="ques w-96 p-9">
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat modi maxime culpa vel sint architecto illo ullam velit numquam, nihil praesentium veritatis a repudiandae cum officia aliquid qui saepe pariatur ex alias tempora ea laboriosam? Optio ipsam explicabo incidunt, odio quas odit? Facere recusandae quas velit soluta doloribus veritatis tenetur.
+  </div>
+</section>
+  <script>
+    let Toggle=document.getElementById('Toggle');
+    let text=document.getElementById('Texts');
+    let ReadText=document.getElementById('ReadText');
+    let textToggle=document.getElementById('textToggle');
+    let toggleText=document.getElementById('toggleText');
+    let bgcolor=document.querySelector('.bgcolor');
+
+    const toggle=()=>{
+      text.classList.toggle('textbox');
+      // textToggle.innerHTML="hide";
+      // textToggle.style.backgroundColor="#ff2222"
+      if(textToggle.innerHTML == "hide"){
+        textToggle.innerHTML="show our criteria"
+      }else{
+        textToggle.innerHTML="hide"
+      }
+    }
+    
+    Toggle.addEventListener('click',()=>{
+      bgcolor.classList.toggle('Bgcolor');
+    })
+
+    const readMore=()=>{
+ReadText.classList.toggle('textbox')
+// toggleText.style.display='none';
+if(toggleText.style.display=='none'){
+  toggleText.style.display='block'
+}else{
+  toggleText.style.display='none'
+}
+    }
+    
+  </script>
 </body>
 </html>

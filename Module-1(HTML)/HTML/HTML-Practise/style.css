@@ -12,6 +12,7 @@ html {
 }
 .dark{
   background-color: #fff;
+  /* color: var(--secondary); */
 }
 h1{
   color: var(--other);
@@ -308,6 +309,9 @@ footer p {
   }
   header {
     width: 100%;
+    /* height: 400px; */
+    justify-content: center;
+    align-items: center;
     flex-direction: column;
     /* padding: 0; */
   }
@@ -319,10 +323,16 @@ footer p {
     /* overflow: hidden; */
     /* align-items: center; */
   }
+  /* #items{
+    display: flex;
+    flex-direction: column;
+  } */
   #Bars {
     position: absolute;
-    top: 0;
-    right: 0;
+    top: -30px;
+    left: 30px;
+    display: block;
+
   }
   #checkBar {
     display: block;
@@ -337,19 +347,7 @@ footer p {
   #navItem #items .open {
     visibility: visible;
   }
-  /* #navItem ul{
-        opacity: 0;
-    } */
-
-  /* #checkBar:only-child ~ ul{
-        left: 0;
-    } */
-  /* nav ul{
-        flex-direction: column;
-    } */
-  #Bars {
-    display: block;
-  }
+  
 
   #about {
     flex-direction: column;
