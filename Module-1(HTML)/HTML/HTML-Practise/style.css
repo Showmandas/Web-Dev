@@ -8,6 +8,16 @@
 html {
   scroll-behavior: smooth;
   font-family: "Work Sans", sans-serif;
+  background-color:#2d3436 ;
+}
+.dark{
+  background-color: #fff;
+}
+h1{
+  color: var(--other);
+}
+#sun{
+  visibility: hidden;
 }
 .active {
   /* width: 100%; */
@@ -21,7 +31,7 @@ html {
 :root {
   --primary: #1a8971;
   --secondary: #60bfaa;
-  --other: #5a5a5a;
+  --other:#0f0f0fc6;
   --fw-1: bold;
 }
 .wrapper {

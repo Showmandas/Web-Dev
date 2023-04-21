@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" id="main">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -24,6 +24,7 @@
             <li><a href="#course">Course</a></li>
             <li><a href="#contact">Contact</a></li>
             <li><a href="#blog">Blog</a></li>
+            <li><i class="fa-regular fa-moon" id="moon"></i></li>
           </ul>
           <i class="fa-solid fa-bars fa-2x" id="Bars"></i>
         </nav>
@@ -42,7 +43,7 @@
             <p>19 april,2023</p>
           </figure>
           <aside class="aboutSection">
-            <h1>About Me</h1>
+            <h1 id="aboutHeader">About Me</h1>
             <p>
               Lorem, ipsum dolor sit amet consectetur adipisicing elit.
               Mollitia, inventore dolorem debitis distinctio eligendi eos? Atque
@@ -301,23 +302,7 @@
         <p>Copyright &copy; 2023,all rights reserved</p>
       </footer>
     </div>
-    <script>
-      let bars = document.getElementById("Bars");
-      let navItem = document.getElementById("navItem");
-      let items = document.getElementById("items");
-      bars.addEventListener("click", () => {
-        navItem.classList.toggle("active");
-        items.classList.toggle("open");
-        if (items.classList.contains("open")) {
-          items.style.visibility = "visible";
-          // navItem.style.flexDirection='column';
-          // items.style.width='100%'
-        } else {
-          items.style.visibility = "hidden";
-        }
-        // .style.display='block';
-        console.log("clicked");
-      });
-    </script>
+      
+    <script src="script.js"></script>
   </body>
 </html>
