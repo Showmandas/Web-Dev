@@ -1,0 +1,85 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://kit.fontawesome.com/d6aff4eabe.js" crossorigin="anonymous"></script>
+  <link href="main.css" rel="stylesheet">
+</head>
+<body class="bg-white h-full bgcolor">
+  <header class="container mx-auto">
+    <div class="navbar mx-auto p-5">
+      <div class="flex-1 text-amber-700">
+        <a href="index.html" class="btn btn-ghost normal-case  text-2xl font-semibold">Showman</a>
+      </div>
+      <div class="flex-none">
+        <ul class="menu menu-horizontal text-amber-600 px-1">
+          <li><a href="index.html">Home</a></li>
+          <li>
+            <a>
+              About
+            </a>
+          </li>
+          <li><a href="Bank.html">Bank Service</a>
+          </li>
+          <li><a href="getShop.html">Get Shop</a>
+
+          <li><input type="checkbox" class="toggle mt-3 px-5" id="Toggle" /></li>
+          <li>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+              <path fill-rule="evenodd" d="M3 6.75A.75.75 0 013.75 6h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 6.75zM3 12a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 12zm0 5.25a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75a.75.75 0 01-.75-.75z" clip-rule="evenodd" />
+            </svg>
+            
+          </li>
+        </ul>
+      </div>
+    </div>
+  </header><!--/wrapper-->
+ <section  class="container mx-auto mt-32 flex flex-col justify-center align-baseline gap-24 mb-20">
+    <div class="card card-side bg-base-100 shadow-xl w-full h-80">
+        <figure><img src="/images/tshirt-1.jfif" alt="Movie" class="w-96"/></figure>
+        <div class="card-body">
+          <h2 class="card-title">T Shirt - 1</h2>
+          <p class="text-3xl font-semibold text-white">price : <i class="fa-solid fa-bangladeshi-taka-sign"></i> <span id="price">250</span></p>
+          <!-- <p>Net Price : <span id="price"></span></p> -->
+          <div class="card-actions">
+            <button class="btn btn-primary" id="plus" onclick="increment()">+</button>
+            <input type="text" value="1" class="input input-bordered input-accent font-bold text-xl w-12 max-w-xs" id="quantity"/>
+            <button class="btn btn-primary" id="minus" onclick="decrement()">-</button>
+          </div>
+        </div>
+      </div>
+    <div class="card card-side bg-base-100 shadow-xl w-full h-80">
+        <figure><img src="/images/t-shirt-2.jpg" alt="Movie" class="w-96 h-full"/></figure>
+        <div class="card-body">
+          <h2 class="card-title">New movie is released!</h2>
+          <p>Click the button to watch on Jetflix app.</p>
+          <div class="card-actions justify-end">
+            <button class="btn btn-primary">Watch</button>
+          </div>
+        </div>
+      </div>
+    
+ </section>
+    <div class="toast toast-start mt-40 toast-middle">
+      <div class="alert alert-info">
+        <div class="flex justify-center align-middle">
+          <span id="hours">00</span>
+          <span>:</span>
+          <span id="minutes">00</span>
+          <span>:</span>
+          <span id="seconds">00</span>
+          <span id="ampm">am</span>
+        </div>
+      </div>
+      <div class="alert alert-success"  id="greetDiv">
+        <div>
+          <span id="greetings" class="font-bold"></span>
+        </div>  
+      </div>
+    </div>
+
+</section>
+  <script src="main.js"></script>
+</body>
+</html>

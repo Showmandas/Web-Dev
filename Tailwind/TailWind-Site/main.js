@@ -98,13 +98,18 @@ depositBtn.addEventListener('click', () => {
   let depositVal=parseInt(deposit.innerText);
   deposit.innerHTML = depositInpAmount + depositVal;
   console.log(typeof depositInpAmount);
-  let netBalance = depositInpAmount + netVal;
-  console.log(typeof netBalance);
-  console.log(typeof netVal);
-  net.innerHTML = netBalance;
+  getNetBalance(depositInpAmount,netVal);
+  // console.log(typeof netBalance);
+  // console.log(typeof netVal);
   // console.log(depositInpAmount);
 })
 
+const getNetBalance=(x,y)=>{
+  let net = document.getElementById('net');
+  let netBalance = x + y;
+  net.innerHTML = netBalance;
+return netBalance;
+}
 
 // for withdraw 
 let withdrawBtn=document.getElementById('withdrawBtn');
@@ -121,3 +126,33 @@ withdrawBtn.addEventListener('click',()=>{
   let netBalance = netVal - withdrawInpAmount;
 net.innerHTML=netBalance 
 })
+
+
+// shopping cart 
+
+// let increment=document.getElementById('plus')
+// let decrement=document.getElementById('minus')
+
+function increment(){
+  // let count = 1;
+  let quantity=document.getElementById('quantity');
+  let price=document.getElementById('price');
+  // let priceVal=parseInt(price.innerText)
+  let PrevQuantityVal=parseInt(quantity.value);
+  let newQuantityVal=PrevQuantityVal + 1;
+  quantity.value=newQuantityVal;
+  price.innerHTML=250 * newQuantityVal;
+  console.log('clicked');
+}
+
+// for decrement 
+function decrement(){
+  // let count = 1;
+  let quantity=document.getElementById('quantity');
+  let price=document.getElementById('price');
+  let PrevQuantityVal=parseInt(quantity.value);
+  let newQuantityVal=PrevQuantityVal - 1;
+  quantity.value=newQuantityVal;
+  price.innerHTML=400 * newQuantityVal;
+  console.log('clicked');
+}

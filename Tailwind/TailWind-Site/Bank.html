@@ -3,17 +3,18 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://kit.fontawesome.com/d6aff4eabe.js" crossorigin="anonymous"></script>
   <link href="main.css" rel="stylesheet">
 </head>
 <body class="bg-white h-full bgcolor">
   <header class="container mx-auto">
     <div class="navbar mx-auto p-5">
       <div class="flex-1 text-amber-700">
-        <a class="btn btn-ghost normal-case  text-2xl font-semibold">Showman</a>
+        <a href="index.html" class="btn btn-ghost normal-case  text-2xl font-semibold">Showman</a>
       </div>
       <div class="flex-none">
         <ul class="menu menu-horizontal text-amber-600 px-1">
-          <li><a>Home</a></li>
+          <li><a href="index.html">Home</a></li>
           <li>
             <a>
               About
@@ -21,6 +22,8 @@
           </li>
           <li><a href="Bank.html">Bank Service</a>
           </li>
+          <li><a href="getShop.html">Get Shop</a>
+
           <li><input type="checkbox" class="toggle mt-3 px-5" id="Toggle" /></li>
           <li>
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
@@ -32,24 +35,24 @@
       </div>
     </div>
   </header><!--/wrapper-->
- <section  class="container mx-auto mt-48 flex flex-row-reverse justify-center align-baseline gap-24">
+ <section  class="container mx-auto mt-32 flex flex-row-reverse justify-center align-baseline gap-24 mb-20">
     <div class="flex flex-col justify-center align-baseline gap-16">
         <div class="card w-96 bg-orange-500 shadow-xl">
             <div class="card-body text-white font-semibold text-4xl">
               <h2 class="card-title">Deposit Amount</h2>
-              <p>$<span id="deposit" class="text-white">0</span></p>
+              <p><i class="fa-solid fa-bangladeshi-taka-sign"></i> <span id="deposit" class="text-white">0</span></p>
             </div>
           </div>
         <div class="card w-96 bg-red-500 shadow-xl">
             <div class="card-body text-white font-semibold text-4xl">
               <h2 class="card-title">Withdraw Amount</h2>
-              <p>$<span id="withdraw">0</span></p>
+              <p><i class="fa-solid fa-bangladeshi-taka-sign"></i> <span id="withdraw">0</span></p>
             </div>
           </div>
         <div class="card w-96 bg-slate-700 shadow-xl">
             <div class="card-body font-semibold text-4xl">
               <h2 class="card-title">Net Balance</h2>
-              <p>$<span id="net">1000</span></p>
+              <p><i class="fa-solid fa-bangladeshi-taka-sign"></i> <span id="net">1000</span></p>
             </div>
           </div>
     </div>
