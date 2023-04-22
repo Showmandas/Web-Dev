@@ -32,28 +32,28 @@
       </div>
     </div>
   </header><!--/wrapper-->
- <section  class="container mx-auto">
-    <div class="flex justify-center align-baseline gap-16">
+ <section  class="container mx-auto mt-48 flex flex-row-reverse justify-center align-baseline gap-24">
+    <div class="flex flex-col justify-center align-baseline gap-16">
         <div class="card w-96 bg-orange-500 shadow-xl">
-            <div class="card-body">
-              <h2 class="card-title">Deposit</h2>
-              <p>deposit : $<span id="deposit">0</span></p>
+            <div class="card-body text-white font-semibold text-4xl">
+              <h2 class="card-title">Deposit Amount</h2>
+              <p>$<span id="deposit" class="text-white">0</span></p>
             </div>
           </div>
         <div class="card w-96 bg-red-500 shadow-xl">
-            <div class="card-body">
-              <h2 class="card-title">Withdraw</h2>
-              <p>withdraw : $<span id="withdraw">0</span></p>
+            <div class="card-body text-white font-semibold text-4xl">
+              <h2 class="card-title">Withdraw Amount</h2>
+              <p>$<span id="withdraw">0</span></p>
             </div>
           </div>
-        <div class="card w-96 bg-slate-300 shadow-xl">
-            <div class="card-body">
+        <div class="card w-96 bg-slate-700 shadow-xl">
+            <div class="card-body font-semibold text-4xl">
               <h2 class="card-title">Net Balance</h2>
-              <p>net Balance : $<span id="net">1000</span></p>
+              <p>$<span id="net">1000</span></p>
             </div>
           </div>
     </div>
-    <div class="flex justify-center align-baseline gap-20 mt-20">
+    <div class="flex flex-col justify-center align-baseline gap-12">
         <div class="card w-96 bg-sky-900 shadow-xl">
             <div class="card-body flex flex-col gap-6">
               <h2 class="card-title">Deposit</h2>
@@ -65,7 +65,7 @@
         <div class="card w-96 bg-sky-500 shadow-xl">
             <div class="card-body flex flex-col gap-6">
               <h2 class="card-title">Withdraw</h2>
-              <input type="text" placeholder="Enter withdraw amount here" class="input input-bordered input-primary w-full max-w-xs" id="withdrawAmount" />
+              <input type="text" placeholder="Enter withdraw amount here" class="input input-bordered input-primary w-full max-w-xs" id="withdrawInp" />
               <button class="btn btn-active btn-secondary" id="withdrawBtn">Withdraw</button>
 
             </div>
