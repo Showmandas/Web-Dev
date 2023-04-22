@@ -1,0 +1,96 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="main.css" rel="stylesheet">
+</head>
+<body class="bg-white h-full bgcolor">
+  <header class="container mx-auto">
+    <div class="navbar mx-auto p-5">
+      <div class="flex-1 text-amber-700">
+        <a class="btn btn-ghost normal-case  text-2xl font-semibold">Showman</a>
+      </div>
+      <div class="flex-none">
+        <ul class="menu menu-horizontal text-amber-600 px-1">
+          <li><a>Home</a></li>
+          <li>
+            <a>
+              About
+            </a>
+          </li>
+          <li><a href="Bank.html">Bank Service</a>
+          </li>
+          <li><input type="checkbox" class="toggle mt-3 px-5" id="Toggle" /></li>
+          <li>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+              <path fill-rule="evenodd" d="M3 6.75A.75.75 0 013.75 6h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 6.75zM3 12a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 12zm0 5.25a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75a.75.75 0 01-.75-.75z" clip-rule="evenodd" />
+            </svg>
+            
+          </li>
+        </ul>
+      </div>
+    </div>
+  </header><!--/wrapper-->
+ <section  class="container mx-auto">
+    <div class="flex justify-center align-baseline gap-16">
+        <div class="card w-96 bg-orange-500 shadow-xl">
+            <div class="card-body">
+              <h2 class="card-title">Deposit</h2>
+              <p>deposit : $<span id="deposit">0</span></p>
+            </div>
+          </div>
+        <div class="card w-96 bg-red-500 shadow-xl">
+            <div class="card-body">
+              <h2 class="card-title">Withdraw</h2>
+              <p>withdraw : $<span id="withdraw">0</span></p>
+            </div>
+          </div>
+        <div class="card w-96 bg-slate-300 shadow-xl">
+            <div class="card-body">
+              <h2 class="card-title">Net Balance</h2>
+              <p>net Balance : $<span id="net">1000</span></p>
+            </div>
+          </div>
+    </div>
+    <div class="flex justify-center align-baseline gap-20 mt-20">
+        <div class="card w-96 bg-sky-900 shadow-xl">
+            <div class="card-body flex flex-col gap-6">
+              <h2 class="card-title">Deposit</h2>
+              <input type="text" placeholder="Enter deposit amount here" class="input input-bordered input-primary w-full max-w-xs" id="depositInp"/>
+              <button class="btn btn-active btn-secondary" id="depositBtn">Deposit</button>
+
+            </div>
+          </div>
+        <div class="card w-96 bg-sky-500 shadow-xl">
+            <div class="card-body flex flex-col gap-6">
+              <h2 class="card-title">Withdraw</h2>
+              <input type="text" placeholder="Enter withdraw amount here" class="input input-bordered input-primary w-full max-w-xs" id="withdrawAmount" />
+              <button class="btn btn-active btn-secondary" id="withdrawBtn">Withdraw</button>
+
+            </div>
+          </div>
+    </div>
+ </section>
+    <div class="toast toast-start mt-40 toast-middle">
+      <div class="alert alert-info">
+        <div class="flex justify-center align-middle">
+          <span id="hours">00</span>
+          <span>:</span>
+          <span id="minutes">00</span>
+          <span>:</span>
+          <span id="seconds">00</span>
+          <span id="ampm">am</span>
+        </div>
+      </div>
+      <div class="alert alert-success"  id="greetDiv">
+        <div>
+          <span id="greetings" class="font-bold"></span>
+        </div>  
+      </div>
+    </div>
+
+</section>
+  <script src="main.js"></script>
+</body>
+</html>
