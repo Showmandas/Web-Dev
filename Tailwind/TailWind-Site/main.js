@@ -137,11 +137,14 @@ function increment(){
   // let count = 1;
   let quantity=document.getElementById('quantity');
   let price=document.getElementById('price');
+  let totalPrize=document.getElementById('total');
   // let priceVal=parseInt(price.innerText)
   let PrevQuantityVal=parseInt(quantity.value);
   let newQuantityVal=PrevQuantityVal + 1;
   quantity.value=newQuantityVal;
   price.innerHTML=250 * newQuantityVal;
+  let total=250 * newQuantityVal;
+  totalPrize.innerText=total;
   console.log('clicked');
 }
 
@@ -149,10 +152,68 @@ function increment(){
 function decrement(){
   // let count = 1;
   let quantity=document.getElementById('quantity');
+  let totalPrize=document.getElementById('total');
   let price=document.getElementById('price');
+  let priceVal=parseInt(price.innerText);
   let PrevQuantityVal=parseInt(quantity.value);
   let newQuantityVal=PrevQuantityVal - 1;
-  quantity.value=newQuantityVal;
-  price.innerHTML=400 * newQuantityVal;
+  if(newQuantityVal < 1){
+    quantity.innerHTML=1;
+  }else{
+    quantity.value=newQuantityVal;
+  }
+  if(priceVal <= 250){
+    price.innerHTML=250;
+  }else{
+    price.innerHTML=250 * newQuantityVal;
+    let total=250 * newQuantityVal;
+    totalPrize.innerText=total;
+
+  }
   console.log('clicked');
+}
+
+function increment1(){
+  // let count = 1;
+  let quantity1=document.getElementById('quantity1');
+  let totalPrize=document.getElementById('total');
+  let price1=document.getElementById('price1');
+  // let priceVal=parseInt(price.innerText)
+  let PrevQuantityVal=parseInt(quantity1.value);
+  let newQuantityVal=PrevQuantityVal + 1;
+  quantity1.value=newQuantityVal;
+  price1.innerHTML=220 * newQuantityVal;
+  let total=220 * newQuantityVal;
+  totalPrize.innerText=total;
+  console.log('clicked');
+}
+
+// for decrement 
+function decrement1(){
+  // let count = 1;
+  let quantity1=document.getElementById('quantity1');
+  let price1=document.getElementById('price1');
+  let priceVal=parseInt(price1.innerText);
+  let PrevQuantityVal=parseInt(quantity1.value);
+  let newQuantityVal=PrevQuantityVal - 1;
+  let totalPrize=document.getElementById('total');
+  if(newQuantityVal < 1){
+    quantity1.innerHTML=1;
+  }else{
+
+    quantity1.value=newQuantityVal;
+  }
+  if(priceVal <= 220){
+    price1.innerHTML=220;
+  }else{
+    price1.innerHTML=220 * newQuantityVal;
+    let total=220 * newQuantityVal;
+    totalPrize.innerText=total;
+
+  }
+  console.log('clicked');
+}
+
+const totalCost=()=>{
+
 }

@@ -26,9 +26,6 @@
           </li>
           <li><a href="showPhotos.html">Show Photos</a>
           </li>
-          <li><a href="meals.html">Meals</a>
-          </li>
-          <li><a href="todo.html">Todo</a></li>
           <li><input type="checkbox" class="toggle mt-3" id="Toggle" /></li>
           <li>
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
@@ -40,28 +37,13 @@
       </div>
     </div>
   </header><!--/wrapper-->
-  <section class="container flex  mx-auto">
-    <article class="mt-20 p-16">
-      <div class="flex flex-col">
-        <h1 class="text-4xl font-bold text-amber-600 mb-8">Tailwind + daisyUi</h1>
-      <p class="text-xl font-bold text-amber-400 mb-8">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Temporibus, delectus! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Earum ut labore iusto sunt dolor itaque, consectetur excepturi cum debitis quos? Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima recusandae delectus et labore ullam eum ducimus, voluptatem reprehenderit accusantium maiores fugiat, consectetur earum iusto tempora! Asperiores aliquid, consequatur, recusandae harum quae incidunt dolores omnis vero quisquam rem minus doloribus natus nisi <span class="readMore text-slate-500 text-xl font-semibold" onclick="readMore()" id="toggleText">Read More</span><span class="hidden" id="ReadText"> quas at, eos ipsam reprehenderit! Voluptatem voluptatum aperiam ipsam atque nulla fugit enim sit nihil nesciunt quos impedit mollitia, eos accusantium quas libero repudiandae soluta odio voluptates. Culpa quia, fuga sequi ab ex corrupti deleniti ipsam. Cumque aspernatur ipsum incidunt, animi neque tenetur ut deleniti fuga atque voluptatem sequi, ratione doloremque totam optio est autem vero quod, aut vel?
-        <span class="readMore text-slate-500 text-xl font-semibold" onclick="readMore()" id="toggleText">Read Less</span>
-      </span></p>
-      </div>
-    </article>
-
-<aside class="flex flex-col justify-center align-baseline mt-50">
-  <button class="btn font-semibold h-20  text-xl w-56 btn-secondary" id="textToggle" onclick="toggle()">Show Our Criteria</button>
-      <div class="hidden mt-9"  id="Texts">
-        <ul class="list-disc flex flex-col gap-y-5 text-slate-500 font-semibold">
-          <li>Dancing</li>
-          <li>Singing</li>
-          <li>Tabla Playing</li>
-          <li>Playing</li>
-          <!-- ... -->
-        </ul>
-      </div>
-</aside>
+  <section class="container  mx-auto">
+    <div class="grid grid-cols-3 gap-4" id="photoSection">
+        
+    </div>
+    <div id="show-all" class="flex justify-center align-baseline mt-14">
+        <button id="show-all-btn" class="btn btn-active btn-secondary">Show all</button>
+    </div>
 </section>
 
     <div class="toast toast-start mt-40 toast-middle">
@@ -106,5 +88,6 @@
   </div>
 </footer>
   <script src="main.js"></script>
+  <script src="photosApi.js"></script>
 </body>
 </html>

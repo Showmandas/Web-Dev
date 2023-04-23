@@ -16,7 +16,7 @@
         <ul class="menu menu-horizontal text-amber-600 px-1">
           <li><a href="index.html">Home</a></li>
           <li>
-            <a>
+            <a href="about.html">
               About
             </a>
           </li>
@@ -35,32 +35,45 @@
       </div>
     </div>
   </header><!--/wrapper-->
- <section  class="container mx-auto mt-32 flex flex-col justify-center align-baseline gap-24 mb-20">
+ <section  class="container mx-auto mt-32 flex  justify-center align-baseline gap-24 mb-20">
     <div class="card card-side bg-base-100 shadow-xl w-full h-80">
-        <figure><img src="/images/tshirt-1.jfif" alt="Movie" class="w-96"/></figure>
+        <figure><img src="/images/tshirt-1.jfif" alt="Movie" class="w-72"/></figure>
         <div class="card-body">
           <h2 class="card-title">T Shirt - 1</h2>
           <p class="text-3xl font-semibold text-white">price : <i class="fa-solid fa-bangladeshi-taka-sign"></i> <span id="price">250</span></p>
           <!-- <p>Net Price : <span id="price"></span></p> -->
           <div class="card-actions">
-            <button class="btn btn-primary" id="plus" onclick="increment()">+</button>
-            <input type="text" value="1" class="input input-bordered input-accent font-bold text-xl w-12 max-w-xs" id="quantity"/>
-            <button class="btn btn-primary" id="minus" onclick="decrement()">-</button>
+              <button class="btn btn-primary" id="minus" onclick="decrement()">-</button>
+              <input type="text" value="1" class="input input-bordered input-accent font-bold text-xl w-12 max-w-xs" id="quantity"/>
+              <button class="btn btn-primary" id="plus" onclick="increment()">+</button>
           </div>
         </div>
       </div>
     <div class="card card-side bg-base-100 shadow-xl w-full h-80">
-        <figure><img src="/images/t-shirt-2.jpg" alt="Movie" class="w-96 h-full"/></figure>
+        <figure><img src="/images/t-shirt-2.jpg" alt="Movie" class="w-72 h-full"/></figure>
         <div class="card-body">
-          <h2 class="card-title">New movie is released!</h2>
-          <p>Click the button to watch on Jetflix app.</p>
-          <div class="card-actions justify-end">
-            <button class="btn btn-primary">Watch</button>
+            <h2 class="card-title">T Shirt - 2</h2>
+            <p class="text-3xl font-semibold text-white">price : <i class="fa-solid fa-bangladeshi-taka-sign"></i> <span id="price1">220</span></p>
+            <!-- <p>Net Price : <span id="price"></span></p> -->
+            <div class="card-actions">
+                <button class="btn btn-primary" id="minus" onclick="decrement1()">-</button>
+                <input type="text" value="1" class="input input-bordered input-accent font-bold text-xl w-12 max-w-xs" id="quantity1"/>
+                <button class="btn btn-primary" id="plus" onclick="increment1()">+</button>
+            </div>
+          </div>
+      </div>
+     
+ </section>
+ <section class="container mx-auto w-96">
+    <div class="card w-full h-72 bg-primary mx-auto text-primary-content">
+        <div class="card-body text-center">
+          <div class="card-actions justify-center">
+            <h2>Total : <i class="fa-solid fa-bangladeshi-taka-sign"></i> <span id="total"></span></h2>
           </div>
         </div>
       </div>
-    
  </section>
+ 
     <div class="toast toast-start mt-40 toast-middle">
       <div class="alert alert-info">
         <div class="flex justify-center align-middle">
@@ -80,6 +93,28 @@
     </div>
 
 </section>
+<footer class="footer mt-20 p-10 bg-neutral text-neutral-content">
+    <div>
+      <span class="footer-title">Services</span> 
+      <a class="link link-hover">Branding</a>
+      <a class="link link-hover">Design</a>
+      <a class="link link-hover">Marketing</a>
+      <a class="link link-hover">Advertisement</a>
+    </div> 
+    <div>
+      <span class="footer-title">Company</span> 
+      <a class="link link-hover">About us</a>
+      <a class="link link-hover">Contact</a>
+      <a class="link link-hover">Jobs</a>
+      <a class="link link-hover">Press kit</a>
+    </div> 
+    <div>
+      <span class="footer-title">Legal</span> 
+      <a class="link link-hover">Terms of use</a>
+      <a class="link link-hover">Privacy policy</a>
+      <a class="link link-hover">Cookie policy</a>
+    </div>
+  </footer>
   <script src="main.js"></script>
 </body>
 </html>
